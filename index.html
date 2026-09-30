@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>نظامي المالي</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<aside>
+  <div class="logo"><span class="lg" data-ic="leaf"></span>نظامي المالي<small>إدارة أفضل .. حياة أستقر</small></div>
+  <a data-go="top">الرئيسية</a><a data-go="c-tx">المعاملات</a><a data-go="c-bud">الميزانية</a><a data-go="c-goals">الأهداف</a><a data-go="c-ins">التقارير</a><a id="nav-set">الإعدادات</a>
+  <div class="quote">المال ليس كل شيء.. لكنه يعطيك حرية الاختيار</div>
+</aside>
+<main id="top">
+  <div class="top">
+    <div class="hi"><b id="hello"></b><small>استمر في رحلتك نحو مستقبل مالي أفضل</small></div>
+    <div class="date" id="date"></div>
+  </div>
+  <div class="head"><h2>نظرة عامة على وضعك المالي (هذا الشهر)</h2><div><button class="p" id="b-tx">+ معاملة جديدة</button> <button id="b-set">الإعدادات</button></div></div>
+  <div class="grid4" id="stats"></div>
+  <div class="two">
+    <div class="card"><h3>نسبة الصرف من الدخل الشهري</h3><div id="ratio"></div></div>
+    <div class="card" id="c-bud2"><div class="head"><h3 style="margin:0">توزيع المصروفات</h3><button id="b-cats">إدارة التصنيفات</button></div><div class="donutbox" id="donut"></div></div>
+  </div>
+  <div class="card" id="c-503020"><div class="head"><h3 style="margin:0">نظام 50/30/20</h3><small style="color:var(--mute)">من المتبقي من راتبك</small></div><div id="r503020"></div></div>
+  <div class="two">
+    <div class="card" id="c-tx"><div class="head"><h3>أحدث المعاملات</h3></div><div class="scroll"><table><thead><tr><th>التاريخ</th><th>النوع</th><th>التصنيف</th><th>المبلغ</th><th>الحالة</th><th></th></tr></thead><tbody id="tx"></tbody></table></div><button id="more" style="margin-top:12px"></button></div>
+    <div class="card" id="c-bud" style="display:grid;gap:12px;align-content:start"><h3>تفصيل المصروفات</h3>
+      <div class="tabs" id="tabs"><button class="on" data-k="0">هذا الشهر</button><button data-k="2">آخر 3 أشهر</button><button data-k="5">آخر 6 أشهر</button></div>
+      <div id="cats"></div><div id="unn"></div></div>
+  </div>
+  <div class="two">
+    <div class="card" id="c-goals"><div class="head"><h3>أهدافك المالية</h3><button class="p" id="b-goal">+ إضافة هدف</button></div><div id="goalchart"></div><div class="scroll"><table><thead><tr><th>الهدف</th><th>المستهدف</th><th>الحالي</th><th>الإنجاز</th><th>الحالة</th><th></th></tr></thead><tbody id="goals"></tbody></table></div></div>
+    <div class="card" id="c-ins"><h3 style="margin-bottom:12px">تحليل سريع</h3><div class="ins" id="ins"></div></div>
+  </div>
+  <div class="foot"><span data-ic="sprout"></span>خطوة صغيرة اليوم .. فرق كبير غدا · بياناتك تُحفظ على جهازك فقط</div>
+</main>
+<dialog id="dlg"></dialog>
+<script src="js/app.js"></script>
+</body>
+</html>
